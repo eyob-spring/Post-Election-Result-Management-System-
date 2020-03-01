@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.layout.GridPane?>
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="1101.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+    <children>
+        <Pane prefHeight="575.0" prefWidth="300.0" style="-fx-background-color: #0C39FF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="52.0" fitWidth="52.0" layoutX="45.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/icons8_Google_Wallet_50px.png" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" layoutX="95.0" layoutY="54.0" prefHeight="23.0" prefWidth="173.0" text="የምርጫ ውጤት ማስያ እና " textFill="WHITE">
+                    <font>
+                        <Font name="Nyala" size="18.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="95.0" layoutY="77.0" prefHeight="23.0" prefWidth="173.0" text="ሪፖርት ስርዓት መተግበሪያ" textFill="WHITE">
+                    <font>
+                        <Font name="Nyala" size="17.0" />
+                    </font>
+                </Label>
+
+            </children>
+        </Pane>
+        <Label fx:id="headerLabel" layoutX="600.0" layoutY="55.0" prefHeight="32.0" prefWidth="173.0" text="ውጤቶችን ሙላ" >
+                <font>
+                    <Font name="Nyala" size="24.0"  />
+                </font>
+            </Label>
+            <Label fx:id="validLabel" layoutX="320.0" layoutY="105.0" prefHeight="30.0" prefWidth="354.0" text="ትክክለኛ ካርድ/ yerwoaa / Valid" >
+                <font>
+                    <Font name="Nyala" size="17.0"  />
+                </font>
+            </Label>
+        <TextField fx:id="valid" layoutX="600.0" layoutY="105.0" prefHeight="30.0" prefWidth="150.0"  />
+            <Label fx:id="unUsedLabel" layoutX="320.0" layoutY="140.0" prefHeight="30.0" prefWidth="354.0" text="ጥቅም ላይ ያልዋለ ካርድ /  / Unused card" >
+                <font>
+                    <Font name="Nyala" size="17.0" />
+                </font>
+            </Label>
+        <TextField fx:id="unUsed" layoutX="600.0" layoutY="140.0" prefHeight="30.0" prefWidth="150.0"  />
+            <Label fx:id="inValidLabel" layoutX="320.0" layoutY="180.0" prefHeight="30.0" prefWidth="354.0" text="አያገለግልም / dogoggora / In-Valid" >
+                <font>
+                    <Font name="Nyala" size="17.0" />
+                </font>
+            </Label>
+        <TextField fx:id="inValid" layoutX="600.0" layoutY="180.0" prefHeight="30.0" prefWidth="150.0"  />
+            <Label fx:id="spoiledLabel" layoutX="320.0" layoutY="220.0" prefHeight="30.0" prefWidth="354.0" text="ተጎድቷል / miidhuu / Spoiled" >
+                <font>
+                    <Font name="Nyala" size="17.0" />
+                </font>
+            </Label>
+        <TextField fx:id="spoiled" layoutX="600.0" layoutY="220.0" prefHeight="30.0" prefWidth="150.0"  />
+            <Label fx:id="prosperityLabel" layoutX="320.0" layoutY="260.0" prefHeight="30.0" prefWidth="354.0" text="ብልጽግና / badhaadha / prosperity" >
+                <font>
+                    <Font name="Nyala" size="17.0" />
+                </font>
+            </Label>
+        <TextField fx:id="prosperity" layoutX="600.0" layoutY="260.0" prefHeight="30.0" prefWidth="150.0"  />
+            <Label fx:id="librationLabel" layoutX="320.0" layoutY="300.0" prefHeight="30.0" prefWidth="354.0" text="ብልጽግና / badhaadha / prosperity" >
+                <font>
+                    <Font name="Nyala" size="17.0" />
+                </font>
+            </Label>
+        <TextField fx:id="libration" layoutX="600.0" layoutY="300.0" prefHeight="30.0" prefWidth="150.0"  />
+            <Label fx:id="renaisenseLabel" layoutX="320.0" layoutY="340.0" prefHeight="30.0" prefWidth="354.0" text="ብልጽግና / badhaadha / prosperity" >
+                <font>
+                    <Font name="Nyala" size="17.0" />
+                </font>
+            </Label>
+        <TextField fx:id="renaisense" layoutX="600.0" layoutY="340.0" prefHeight="30.0" prefWidth="150.0"  />
+        <Button fx:id="submitButton" layoutX="600.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#HandleEvents" prefHeight="32.0" prefWidth="100.0" styleClass="button2" stylesheets="@../styling/fullpackstyling.css" text="ያስገቡ" >
+            <font>
+                <Font name="Nyala" size="15.0" />
+            </font>
+        </Button>
+
+        <Label fx:id="lblStatus" layoutX="320.0" layoutY="26.0" prefHeight="32.0" prefWidth="354.0" text="ሁኔታ :" >
+            <font>
+                <Font name="Nyala" size="12.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
